@@ -52,32 +52,52 @@ This project presents a high-performance shopping system, expertly developed in 
 
 ## How to start:
 ### 1. Start MySQL and initilized the tables:
-- sudo /usr/local/mysql/support-files/mysql.server start 
+```
+$ sudo /usr/local/mysql/support-files/mysql.server start
+```
 - password:12345678, configure the application.properties and generatorConfig.xml
-- Run seckill_activity.sql to create the tables
   
+- Run seckill_activity.sql to create the tables
+
 ### 2. Start Redis by running the following commands in the directory:
-- redis-server
-
+```
+$ redis-server
+```
 ### 3. Start RocketMQ by running following commands in the directory:
-- nohup sh bin/mqnamesrv 
-- nohup sh bin/mqbroker -n localhost:9876 
-- cat nohup.out
-
+```
+$ nohup sh bin/mqnamesrv 
+```
+```
+$ nohup sh bin/mqbroker -n localhost:9876 
+```
+```
+$ cat nohup.out
+```
 ### 4. Redirect to the homepage:
-- localhost:8080/seckills
+```
+$ localhost:8080/seckills
+```
+
 - The port can be configured in application.properties.
 
 ### * To restart RocketMQ, run the following commands in the directory:
-- sh bin/mqshutdown broker
-- sh bin/mqshutdown namesrv
+```
+$ sh bin/mqshutdown broker
+```
+```
+$ sh bin/mqshutdown namesrv
+```
 
 ### * To set the messageDelayLevels for locked-items(before payment is successful):
 - 1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
 - rocketMQService.sendDelayMessage("pay_check", JSON.toJSONString(order), 4);
 
 ## Stress Testing (using JMeter)
-- Open the terminal then run: jmeter
+- Open the terminal then run:
+```
+$ jmeter
+```
+
 <img width="995" alt="image" src="https://github.com/JackyTang0516/Flashsale-System/assets/111934442/5d563b56-dc4e-474f-a3bd-c2339634c3c2">
 <img width="1342" alt="image" src="https://github.com/JackyTang0516/Flashsale-System/assets/111934442/d638f3f0-b347-42f5-82af-03ba42429f18">
 <img width="989" alt="image" src="https://github.com/JackyTang0516/Flashsale-System/assets/111934442/f8d996d7-df39-4ace-9395-c4ca5c4ea1c2">
