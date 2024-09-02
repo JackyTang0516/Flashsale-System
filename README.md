@@ -68,7 +68,7 @@ redis-server
 mqnamesrv & 
 ```
 ```
-nohup sh bin/mqbroker -n localhost:9876 
+mqbroker -n localhost:9876 autoCreateTopic=true
 ```
 ```
 cat nohup.out
