@@ -53,7 +53,7 @@ This project presents a high-performance shopping system, expertly developed in 
 ## How to start:
 ### 1. Start MySQL and initilized the tables:
 ```
-$ sudo /usr/local/mysql/support-files/mysql.server start
+ sudo /usr/local/mysql/support-files/mysql.server start
 ```
 - password:12345678, configure the application.properties and generatorConfig.xml
   
@@ -61,38 +61,38 @@ $ sudo /usr/local/mysql/support-files/mysql.server start
 
 ### 2. Start Redis by running the following commands in the directory:
 ```
-$ redis-server
+redis-server
 ```
 ### 3. Start RocketMQ by running following commands in the directory:
 ```
-$ nohup sh bin/mqnamesrv 
+nohup sh bin/mqnamesrv 
 ```
 ```
-$ nohup sh bin/mqbroker -n localhost:9876 
+nohup sh bin/mqbroker -n localhost:9876 
 ```
 ```
-$ cat nohup.out
+cat nohup.out
 ```
 ### 4. Redirect to the homepage:
 ```
-$ localhost:8080/seckills
+localhost:8080/seckills
 ```
 
 - The port can be configured in application.properties.
 
 ### * To restart RocketMQ, run the following commands in the directory:
 ```
-$ sh bin/mqshutdown broker
+sh bin/mqshutdown broker
 ```
 ```
-$ sh bin/mqshutdown namesrv
+sh bin/mqshutdown namesrv
 ```
 ### * To restart Nacos:
 ```
-$ sh startup.sh -m standalone
+sh startup.sh -m standalone
 ```
 ```
-$ sh shutdown.sh        
+sh shutdown.sh        
 ```
 
 ### * To set the messageDelayLevels for locked-items(before payment is successful):
@@ -102,7 +102,7 @@ $ sh shutdown.sh
 ## Stress Testing (using JMeter)
 - Open the terminal then run:
 ```
-$ jmeter
+jmeter
 ```
 
 <img width="995" alt="image" src="https://github.com/JackyTang0516/Flashsale-System/assets/111934442/5d563b56-dc4e-474f-a3bd-c2339634c3c2">
