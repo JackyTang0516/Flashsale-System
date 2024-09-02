@@ -29,7 +29,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58728a1f-2606-45e8-ae46-3ac1e0513fe6" name="Default Changelist" comment="" />
+    <list default="true" id="58728a1f-2606-45e8-ae46-3ac1e0513fe6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1436f96-8edd-48a4-9a21-4be36a407b83.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d1436f96-8edd-48a4-9a21-4be36a407b83.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ea5e11fa-43a6-42c5-84dc-e3bcc90562dc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ea5e11fa-43a6-42c5-84dc-e3bcc90562dc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seckill_activity.sql" beforeDir="false" afterPath="$PROJECT_DIR$/seckill_activity.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,21 +53,41 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "JackyTang0516"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JackyTang0516/Flashsale-System.git",
+    "accountId": "35b2a76c-3087-4c91-b7f0-bd89f7d2802b"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.6.3" />
+        <option name="customMavenHome" value="$USER_HOME$/apache-maven-3.6.3" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="1kiRnfgC1WFfumQNPUxkZfUpOIJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -70,12 +99,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Database Script.seckill_activity.sql.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.SeckillApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/jackytang/Desktop/flashsale",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jackytang/Desktop/Flashsale-System",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,14 +119,17 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "settings.editor.selected.configurable": "database.query.execution",
     "spring.configuration.checksum": "67f16856b9c446d72723e6aad841570d",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "mysql",
-      "redis"
+      "redis",
+      "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "20c9c521-6522-489c-bc4c-a7a586f4c107/schema/\"seckill_jiuzhang\""
     ]
   }
 }]]></component>
@@ -116,7 +154,13 @@
       <recent name="com.jiuzhang.seckill.mq" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SeckillApplication">
+  <component name="RunManager">
+    <configuration name="seckill_activity.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/seckill_activity.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="20c9c521-6522-489c-bc4c-a7a586f4c107" namespace="schema/&quot;seckill_jiuzhang&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="RedisDemoTest.pushSeckillInfoToRedisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seckill" />
       <extension name="coverage">
@@ -214,6 +258,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -273,6 +325,7 @@
       <workItem from="1703314015817" duration="4471000" />
       <workItem from="1703319927219" duration="679000" />
       <workItem from="1703320659963" duration="67000" />
+      <workItem from="1725252841022" duration="4776000" />
     </task>
     <servers />
   </component>

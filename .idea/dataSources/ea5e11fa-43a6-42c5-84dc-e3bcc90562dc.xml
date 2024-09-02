@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="seckill_jiuzhang@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.48">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.53">
     <root id="1"/>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -970,68 +970,68 @@ DYNAMIC</Options>
     <column id="303" parent="299" name="id">
       <AutoIncrement>27</AutoIncrement>
       <Comment>秒杀活动ID</Comment>
-      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>bigint unsigned|0s</StoredType>
     </column>
     <column id="304" parent="299" name="name">
       <Comment>秒杀活动名称</Comment>
-      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="305" parent="299" name="commodity_id">
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="306" parent="299" name="old_price">
       <Comment>商品原价</Comment>
-      <DasType>decimal(10,2 digit)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
     <column id="307" parent="299" name="seckill_price">
       <Comment>秒杀价格</Comment>
-      <DasType>decimal(10,2 digit)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
     <column id="308" parent="299" name="activity_status">
       <Comment>秒杀活动的状态，0:下架 1:正常</Comment>
-      <DasType>int|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="309" parent="299" name="start_time">
       <Comment>活动开始时间</Comment>
-      <DasType>datetime|0s</DasType>
       <Position>7</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="310" parent="299" name="end_time">
       <Comment>活动结束时间</Comment>
-      <DasType>datetime|0s</DasType>
       <Position>8</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="311" parent="299" name="total_stock">
       <Comment>秒杀活动</Comment>
-      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
+      <StoredType>bigint unsigned|0s</StoredType>
     </column>
     <column id="312" parent="299" name="available_stock">
       <Comment>可用库存</Comment>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="313" parent="299" name="lock_stock">
       <Comment>锁定库存数量</Comment>
-      <DasType>bigint unsigned|0s</DasType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>11</Position>
+      <StoredType>bigint unsigned|0s</StoredType>
     </column>
     <index id="314" parent="299" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1055,24 +1055,24 @@ commodity_id</ColNames>
     </key>
     <column id="318" parent="300" name="id">
       <AutoIncrement>1002</AutoIncrement>
-      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>bigint unsigned|0s</StoredType>
     </column>
     <column id="319" parent="300" name="commodity_name">
-      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="320" parent="300" name="commodity_desc">
-      <DasType>varchar(1000)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(1000)|0s</StoredType>
     </column>
     <column id="321" parent="300" name="commodity_price">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="322" parent="300" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1086,43 +1086,43 @@ commodity_id</ColNames>
     </key>
     <column id="324" parent="301" name="id">
       <AutoIncrement>7</AutoIncrement>
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="325" parent="301" name="order_no">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="326" parent="301" name="order_status">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="327" parent="301" name="seckill_activity_id">
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="328" parent="301" name="user_id">
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="329" parent="301" name="order_amount">
-      <DasType>decimal(10) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>decimal(10) unsigned|0s</StoredType>
     </column>
     <column id="330" parent="301" name="create_time">
-      <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="331" parent="301" name="pay_time">
-      <DasType>datetime|0s</DasType>
       <Position>8</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="332" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1137,27 +1137,27 @@ commodity_id</ColNames>
     <column id="334" parent="302" name="id">
       <AutoIncrement>1</AutoIncrement>
       <Comment>用户ID</Comment>
-      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>bigint unsigned|0s</StoredType>
     </column>
     <column id="335" parent="302" name="user_name">
       <Comment>用户名</Comment>
-      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <column id="336" parent="302" name="address">
       <Comment>地址</Comment>
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="337" parent="302" name="phone">
       <Comment>手机号</Comment>
-      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <index id="338" parent="302" name="PRIMARY">
       <ColNames>id</ColNames>

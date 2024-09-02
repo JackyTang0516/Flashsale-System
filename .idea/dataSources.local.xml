@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-231.9011.34">
-    <data-source name="seckill_jiuzhang@localhost" uuid="ea5e11fa-43a6-42c5-84dc-e3bcc90562dc">
-      <database-info product="MySQL" version="8.0.34" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.34" exact-driver-version="8.0">
-        <extra-name-characters>#@</extra-name-characters>
-        <identifier-quote-string>`</identifier-quote-string>
+  <component name="dataSourceStorageLocal" created-in="IU-242.20224.419">
+    <data-source name="0@localhost" uuid="d1436f96-8edd-48a4-9a21-4be36a407b83">
+      <database-info product="Redis Standalone" version="7.0.12" jdbc-version="4.2" driver-name="Redis JDBC Driver" driver-version="1.5" dbms="REDIS" exact-version="7.0.12" exact-driver-version="1.5">
+        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
-      <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
           <node kind="schema" qname="@" />
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="0@localhost" uuid="d1436f96-8edd-48a4-9a21-4be36a407b83">
-      <database-info product="Redis Standalone" version="7.0.12" jdbc-version="4.2" driver-name="Redis JDBC Driver" driver-version="1.4" dbms="REDIS" exact-version="7.0.12" exact-driver-version="1.4" />
+    <data-source name="@localhost" uuid="20c9c521-6522-489c-bc4c-a7a586f4c107">
+      <database-info product="MySQL" version="8.0.38" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.38" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
+      </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="@" />
+          <node kind="schema" negative="1" />
         </introspection-scope>
       </schema-mapping>
     </data-source>
