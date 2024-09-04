@@ -38,3 +38,5 @@ yarn-error.log
 # Docker specific files
 docker-compose.yml
 Dockerfile
+
+.mvn/wrapper/
