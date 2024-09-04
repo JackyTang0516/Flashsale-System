@@ -75,7 +75,7 @@ cat nohup.out
 ```
 ### 4. Redirect to the homepage:
 ```
-localhost:8080/seckills
+localhost:8085/seckills
 ```
 
 - The port can be configured in application.properties.
