@@ -65,10 +65,10 @@ redis-server
 ```
 ### 3. Start RocketMQ by running following commands in the directory:
 ```
-nohup sh bin/mqnamesrv 
+mqnamesrv & 
 ```
 ```
-nohup sh bin/mqbroker -n localhost:9876 
+mqbroker -n localhost:9876 autoCreateTopic=true
 ```
 ```
 cat nohup.out
