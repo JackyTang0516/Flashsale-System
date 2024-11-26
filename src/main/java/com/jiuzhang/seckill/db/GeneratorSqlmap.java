@@ -12,7 +12,7 @@ import java.util.List;
 public class GeneratorSqlmap {
     public void generator() throws Exception {
         List<String> warnings = new ArrayList<String>();
-        //指定逆向工程配置文件
+
         File configFile = new File("src/main/resources/generatorConfig.xml");
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = cp.parseConfiguration(configFile);
